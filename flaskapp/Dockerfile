@@ -1,6 +1,6 @@
 FROM python:3.10.13
 
-RUN apt-get update && apt install curl
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y curl
 
 WORKDIR /app
 
